@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="estilos.css" />
+		<script type="text/javascript" src="funcoes.js"></script>
+		<title>Compre Seu Computador</title>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Configure seu Computador</h1>
+			</header>
+
+			<section>
+				<img src="pc.jpg" alt="Imagem ilustrativa do computador" width="30%" />
+
+				<p class="paragrafo" id="">Valor inicial do Computador: <br> R$ 1.500,00</p>
+				
+				<h3>Configurações Adicionais</h3>
+				
+				<form id="caracteristicas" method="post" action="">
+
+					<fieldset id="placavideo">
+						<legend>Modelo da Placa de Vídeo</legend>
+
+						<input type="radio" id="placavideo1" name="placavideo" value="0" onclick="preco1()" />
+						<label for="placavideo1">Nenhuma (R$ 0,00)</label> <br>
+						<input type="radio" id="placavideo2" name="placavideo" value="870" onclick="preco1()" /> 
+						<label for="placavideo2">GTX 1650 (R$ 870,00)</label> <br>
+						<input type="radio" id="placavideo3" name="placavideo" value="1900" onclick="preco1()" />
+						<label for="placavideo3">RTX 2060 (R$ 1.900,00)</label>
+					</fieldset> <br>
+
+					<fieldset id="processador">
+						<legend>Modelo de Processador</legend>
+
+						<input type="radio" id="processador1" name="processador" value="550" onclick="preco2()" />
+						<label for="processador1">I3 (R$ 550,00)</label> <br>
+						<input type="radio" id="processador2" name="processador" value="999" onclick="preco2()" />
+						<label for="processador2">I5 (R$ 999,00)</label> <br>
+						<input type="radio" id="processador3" name="processador" value="1700" onclick="preco2()" />
+						<label for="processador3">I7 (R$ 1.700,00)</label> <br>
+					</fieldset> <br>
+
+					<fieldset id="ram">
+						<legend>Quantidade de Memória RAM</legend>
+
+						<input type="radio" id="ram1" name="ram" value="150" onclick="preco3()" />
+						<label for="ram1">4GB (R$ 150,00)</label> <br>
+						<input type="radio" id="ram2" name="ram" value="250" onclick="preco3()"/>
+						<label for="ram2">8GB (R$ 250,00)</label> <br>
+						<input type="radio" id="ram3" name="ram" value="450" onclick="preco3()" />
+						<label for="ram3">16GB (R$ 450,00)</label> 
+					</fieldset> <br>
+
+					<fieldset id="hd">
+						<legend>HD</legend>
+
+						<input type="radio" id="hd1" name="hd" value="170" onclick="preco4()" />
+						<label for="hd1">500 GB (R$ 170,00)</label> <br>
+						<input type="radio" id="hd2" name="hd" value="230" onclick="preco4()"/>
+						<label for="hd2">1 TB (R$ 230,00)</label> <br>
+						<input type="radio" id="hd3" name="hd" value="360" onclick="preco4()" />
+						<label for="hd3">2 TB (R$ 360,00)</label>
+					</fieldset> <br>
+
+					<fieldset id="ssd">
+						<legend>SSD</legend>
+
+						<input type="radio" id="ssd1" name="ssd" value="140" onclick="preco5()" />
+						<label for="sdd1">120 GB (R$ 140,00)</label> <br>
+						<input type="radio" id="ssd2" name="ssd" value="240" onclick="preco5()"/>
+						<label for="ssd2">250 GB (R$ 240,00)</label> <br>
+						<input type="radio" id="ssd3" name="ssd" value="350" onclick="preco5()" />
+						<label for="ssd3">480 GB (R$ 350,00)</label>
+					</fieldset> <br>
+
+					<fieldset id="final">
+						<legend>Preço Final</legend>
+
+						<input type="text" readonly id="resultado" value="" onclick="calcular()"/>
+					</fieldset>	
+					
+				
+				</form>
+			</section>
+
+			
+		</div>
+	</body>
+</html>
