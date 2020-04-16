@@ -1,0 +1,63 @@
+body {
+	background-color: #7159c1;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+div#wrapper {
+	background-color: #FFFFFF;
+	border: #000000 1px solid;
+	padding: 15px;
+	text-align: center;
+	background-image: url("bg.png");
+	background-size: 400px 650px;
+}
+
+fieldset {
+	font-size: 10pt;
+	text-align: left; 
+	border: 1px solid rgb(34, 53, 219);  
+	background: rgb(255, 255, 255); 
+	padding: 3px;
+}
+fieldset legend { 
+	background:darkslateblue; 
+	padding: 6px; 
+	font-weight: bold; 
+	color: white;
+}
+
+form {
+	margin: 20px 0;
+	background-color: white;
+	padding: 30px 25px;
+	border-radius: 5px;
+  }
+
+p.paragrafo {
+	font-size: 13pt;
+	font-weight: bold;
+	color: white;
+
+}
+
+p.rodape {
+	font-family: verdana;
+	font-size: 10pt;
+	width: 90%;
+} 
+
+label {
+	font-size: 10pt;
+	color: rgb(255, 102, 0); 
+	font-weight: bold; 
+	width: 150px; 
+	
+}
+
+h3, h1 {
+	color: white;
+}
+
+img {
+	border-radius: 50%;
+}
